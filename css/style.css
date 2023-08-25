@@ -1,0 +1,352 @@
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+:root
+{
+    --cl-blue:#007aff;
+    --bg-light: #e9ecef;
+}
+.arrow
+{
+    z-index: 9999;
+}
+.txt-blue
+{
+    color: var(--cl-blue);
+}
+.arrow
+{
+    width: 35px;
+    height: 35px;
+    background-color: var(--cl-blue);
+    bottom: 10px;
+    right: 10px;
+}
+.navbar
+{
+    background-color: rgba(0 , 0 ,0,0.6);
+    font-weight: 900;
+}
+.navbar-brand
+{
+    font-size: 25;
+}
+.nav-item:hover .line
+{
+    width: 98%;
+}
+.line
+{
+    transition-duration:1s ;
+    width: 0%;
+    background-color: #fff;
+    height: 2px;
+}
+.dropdown-item
+{
+    transition-duration: 1s;
+}
+.dropdown-item:hover
+{
+    color: var(--cl-blue);
+}
+
+
+header
+{
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header-content h2
+{
+    color: #fff;
+    font-size: 70;
+    font-weight: 900;
+}
+.header-content h3
+{
+    color: #fff;
+    font-size: 40;
+    font-weight: 900;
+}
+
+.layer
+{
+    background-color: rgba(0 , 0 ,0,0.6);
+}
+
+.header-content h3::after
+{
+    content: '|';
+    animation-name: typing ;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes typing {
+    1.3%{content: "D|";}
+    2.6%{content: "De|";}
+    3.9%{content: "Dev|";}
+    5.2%{content: "Deve|";}
+    6.5%{content: "Devel|";}
+    7.8%{content: "Develo|";}
+    9.1%{content: "Develop|";}
+    10.4%{content: "Develope|";}
+    11.7%{content: "Ddeveloper|";}
+    13%{content: "Develope|";}
+    14.3%{content: "Develop|";}
+    15.6%{content: "Develo|";}
+    16.9%{content: "Devel|";}
+    18.2%{content: "Deve|";}
+    19.5%{content: "Dev|";}
+    20.8%{content: "De|";}
+    22.1%{content: "D|";}
+    23.4%{content: "De|";}
+    24.7%{content: "Des|";}
+    26%{content: "Desi|";}
+    27.3%{content: "Desig|";}
+    28.6%{content: "Design|";}
+    29.9%{content: "Designe|";}
+    31.2%{content: "Designer|";}
+    32.5%{content: "Designe|";}
+    33.8%{content: "Design|";}
+    35.1%{content: "Desig|";}
+    36.4%{content: "Desi|";}
+    37.7%{content: "Des|";}
+    39%{content: "De|";}
+    40.3%{content: "D|";}
+    41.6%{content: "P|";}
+    42.9%{content: "Ph|";}
+    44.2%{content: "Pho|";}
+    45.5%{content: "Phot|";}
+    46.8%{content: "Photo|";}
+    48.1%{content: "Photog|";}
+    49.4%{content: "Photogr|";}
+    50.7%{content: "Photogra|";}
+    52%{content: "Photograp|";}
+    52.3%{content: "Photograph|";}
+    53.3%{content: "Photographe|";}
+    54.6%{content: "Photographer|";}
+    55.9%{content: "Photographe|";}
+    57.2%{content: "Photograph|";}
+    58.5%{content: "Photograp|";}
+    59.8%{content: "Photogra|";}
+    61.1%{content: "Photogr|";}
+    62.4%{content: "Photog|";}
+    63.7%{content: "Photo|";}
+    65%{content: "Phot|";}
+    66.3%{content: "Pho|";}
+    67.6%{content: "Ph|";}
+    68.9%{content: "P|";}
+    70.2%{content: "|";}
+    71.5%{content: "F|";}
+    72.8%{content: "Fr|";}
+    74.1%{content: "Fre|";}
+    75.4%{content: "Free|";}
+    76.7%{content: "Freel|";}
+    78%{content: "Freela|";}
+    79.3%{content: "Freelan|";}
+    80.6%{content: "Freelanc|";}
+    81.9%{content: "Freelance|";}
+    83.2%{content: "Freelancer|";}
+    84.5%{content: "Freelance|";}
+    85.8%{content: "Freelanc|";}
+    87.1%{content: "Freelan|";}
+    88.4%{content: "Freela|";}
+    89.7%{content: "Freel|";}
+    91%{content: "Free|";}
+    92.3%{content: "Fre|";}
+    93.6%{content: "Fr|";}
+    94.9%{content: "F|";}
+    100%{content: "|";}   
+}
+
+
+.about 
+{
+    background-color: var(--bg-light);
+}
+
+.about h3
+{
+    font-size: 16;
+    margin-top: 20px;
+}
+
+.under-line
+{
+    width: 20%;
+    height: 4px;
+    background-color: var(--cl-blue);
+}
+
+.about p
+{
+    font-size: 20;
+}
+
+.services
+{
+    background-color: var(--bg-light);
+}
+
+.services h2
+{
+    font-weight: 900;
+}
+
+.icon
+{
+    width: 35px;
+    height: 35px;
+    border: solid var(--cl-blue) 10px;
+    border-radius: 50%;
+    font-size: 30;
+    transition: 1s;
+}
+
+.card:hover .icon
+{
+
+    background-color: var(--cl-blue);
+    border-color: #ced4da;
+}
+
+.serrvice-line 
+{
+    width: 2%;
+    height: 4px;
+    background-color: var(--cl-blue);
+}
+
+.counters
+{
+    background-image: url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+
+.counter-icon
+{
+    width: 35px;
+    height: 35px;
+    border: solid var(--bg-light) 10px;
+    border-radius: 50%;
+    font-size: 20;
+}
+
+.card-icon
+{
+    width: 35px;
+    height: 35px;
+    border: solid var(--cl-blue) 3px;
+    border-radius: 50%;
+    font-size: 20;
+}
+
+.portfolio img
+{
+    transition: 1s;
+}
+.p-card:hover img
+{
+    transform: scale(1.2);
+}
+
+.card-img
+{
+    overflow: hidden;
+}
+
+.portfolio
+{
+    background-color: var(--bg-light);
+}
+
+.client
+{
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.blog
+{
+    background-color: var(--bg-light);
+}
+
+.list-group-item
+{
+    background-color: var(--bg-light);
+}
+
+.list-group-item a
+{
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+}
+.list-group-item a:hover
+{
+    color: var(--cl-blue);
+}
+.list-group-item img
+{
+    width: 30px;
+}
+
+
+
+form .fbtn 
+{
+   transition: 1s;
+}
+
+form .fbtn:hover
+{
+    border: 5px var(--bg-light) solid ;
+    background-color: #9ec6f1;
+}
+
+footer p
+{
+
+    font-size: 20;
+}
+
+
+
+footer
+{
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.carousel-indicators [data-bs-target]
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.ic 
+{
+    transition: 1s;
+}
+.ic:hover 
+{
+
+    background-color: var(--cl-blue);
+    border-color: #ced4da;
+}
